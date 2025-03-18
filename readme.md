@@ -1,7 +1,12 @@
-# Classfication Images Using Siamse-Network
+# Classfication Images Using Siamese-Network
 
 Project AI Cup TE Connectivity
 
+## Clone Respository
+```
+git clone https://github.com/AleSanchezB/ai-cup-chatbot
+cd ai-cup-chatbot
+```
 ## Install Requirements
 
 ```bash
@@ -19,9 +24,6 @@ pip install requirements.txt
 python main.py
 ```
 
-## License
-
-Read the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 ## License
 
 Distributed under the Unlicense License. See `LICENSE` for more information.

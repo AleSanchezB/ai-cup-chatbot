@@ -4,6 +4,7 @@ A continuacion les dejo un *TODO* para que vayan viendo que es lo que falta, ade
 
 * TODO
 - Modificar los parametros de 'config.py' para poder hacer una mejor clasificacion
+- Empezar la presentacion del proyecto
 - Buscar implementaciones de logica difusa
 
 ** Notas:
@@ -19,7 +20,7 @@ Algunos comandos que les puede servir y herramientas:
 - Comandos Git:
   - git brach -m nombre (crea una nueva rama)
   - git checkout nombre (cambias de rama)
-  - git add archivo1 archivo2 carpeta (se puede agregar lo que sea o tambien usar el . para especificar que todo se va a agregar)
+  - git add archivo1 archivo2 carpeta (se puede agregar lo que sea o tambien usar el . para especificar que todo se va a agregar pero solo se hace para cuando estan seguros de que van a agregar todo)
   - git commit -m "Texto" (aqui se pone todos los cambios que hicieron)
   - git push (este es para subir todos los cambios que hiciste)
   - git pull origin main (se debe hacer siempre que vayas a hacer cambios y que no tengas modificaciones)
