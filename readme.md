@@ -6,22 +6,21 @@ Project AI Cup TE Connectivity
 
 ```bash
 python -m venv .env
+
 # Para Linux/Mac
 source .env/bin/activate
 # Para windows
 .env\Script\Activate
+
 pip install requirements.txt
 ```
 
 ## Run Project
 
 ```bash
-python main.py
+jupyter lab
 ```
 
-## License
-
-Read the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 ## License
 
 Distributed under the Unlicense License. See `LICENSE` for more information.

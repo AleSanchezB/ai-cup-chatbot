@@ -1,20 +1,44 @@
+#+OPTIONS: toc:nil num:t
+#+LATEX_HEADER: \usepackage{graphicx}
+#+LATEX_HEADER: \usepackage{float}
+#+LATEX_HEADER: \usepackage{hyperref}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \usepackage{geometry}
+#+LATEX_HEADER: \geometry{a4paper, bottom=1.0cm}
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \fancyhf{}
+#+LATEX_HEADER: \fancyhead[L]{\textbf{Notas: TE AI CUP}}
+#+LATEX_HEADER: \fancyhead[RO]{\textbf{\today}}
+#+LATEX_HEADER: \fancyfoot[L]{Braulio Sánchez}
+#+LATEX_HEADER: \fancyfoot[C]{\thepage}
+#+LATEX_HEADER: \fancyfoot[RO]{a222203834@unison.mx}
+#+LATEX_HEADER: \renewcommand{\headrulewidth}{0.4pt}
+#+LATEX_HEADER: \renewcommand{\footrulewidth}{0.4pt}
+#+LATEX_HEADER: \setlength{\footskip}{20pt}
+
+
 Se quiere hacer una red siames junto a un algoritmo de logica difusa para poder asegurar que las imagenes fueron clasificadas correctamente. Al final se dejan los papers vistos (no todos se leyeron del todo ya que no es 100% necesario es solo para una idea).
 
 A continuacion les dejo un *TODO* para que vayan viendo que es lo que falta, ademas les dejo otras notitas de cosas que he hablado con Jorge de TE y algunas cosas que podrian servirles para los que nunca han usado ciertas cosas.
 
 * TODO
-- Modificar los parametros de 'config.py' para poder hacer una mejor clasificacion
-- Buscar implementaciones de logica difusa
+- Relizar presentacion para antes del 26 de marzo
+- Presentar avances semanles de lo que se ha avanzado  
 
+* Reuniones
+- Reuniones todos los miercoles a las 11:00 AM.
+  
 ** Notas:
-*Semana Marzo 10-14:* Actualmente se tiene un prototipo de como esta funcionando una red siames para poder hacer la clasificacion. El único problema que surgió era el tema del dataset ya que como es pequeño podría resultar en resultados malos, ahi fue donde propusiste el que nosotros realizar la clasficaciones pero hablando con Waissman me dijo que existe una forma que en base a un pequeño dataset poder realizar una mejor clasificacion y es usando basicamente dos imagenes como referencia (esas imagenes son del dataset), lo cual en vez de hacer comparacion 1 a 1, seran de 1 a 2 lo cual permite crecer mucho mas nuestro dataset a eso se llama Triplet Loss Network, y será mas grande al hacer el data augmentation. Se hizo una implementacion muy basica la cual falta poder ajustar los parametros para obtener mejores resultados. 
+- *Semana Marzo 10-14:* Actualmente se tiene un prototipo de como esta funcionando una red siames para poder hacer la clasificacion. El único problema que surgió era el tema del dataset ya que como es pequeño podría resultar en resultados malos, ahi fue donde propusiste el que nosotros realizar la clasficaciones pero hablando con Waissman me dijo que existe una forma que en base a un pequeño dataset poder realizar una mejor clasificacion y es usando basicamente dos imagenes como referencia (esas imagenes son del dataset), lo cual en vez de hacer comparacion 1 a 1, seran de 1 a 2 lo cual permite crecer mucho mas nuestro dataset a eso se llama Triplet Loss Network, y será mas grande al hacer el data augmentation. Se hizo una implementacion muy basica la cual falta poder ajustar los parametros para obtener mejores resultados. 
 
+- Se hizo en libreta de jupyter para asi poder tenerla en github, pueden subir la libreta a collab si es que no tienen una pc que pueda soportar correr el entrenamiento (no es muy pesado, pero si no es una pc un poco potente puede tardar mas). Ya que jupyter lab corre en local usando recursos propios.
+    
 Algunos comandos que les puede servir y herramientas:
 - Editores de codigo:
   - Visual Studio Code
   - PyCharm
 - Herramientas necesarias:
-  - Python 3.12.7
+  - Python 3.13.2
   - Git
 - Comandos Git:
   - git brach -m nombre (crea una nueva rama)
