@@ -3,3 +3,5 @@
 *.log
 *.tex
 dataset_augmented
+dataset
+test
